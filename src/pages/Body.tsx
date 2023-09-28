@@ -5,7 +5,6 @@ import EditProfile from "../components/static/EditProfile";
 import { useDispatch, useSelector } from "react-redux";
 import { ontoggleState } from "../global/GlobalState";
 import { FaUserEdit } from "react-icons/fa";
-// import { FcCancel } from "react-icons/fc"
 import { ImCancelCircle } from "react-icons/im";
 
 const Body = () => {

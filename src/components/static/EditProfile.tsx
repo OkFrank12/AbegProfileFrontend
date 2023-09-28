@@ -31,9 +31,11 @@ const EditProfile = () => {
       <div className="w-full min-h-[100px] flex flex-col">
         <div className="w-full flex justify-between">
           <div
-            className={`w-[30%] text-[10px] cursor-pointer capitalize rounded-md p-1 flex justify-center items-center text-white h-[50px] ${
-              !company ? "bg-[dodgerblue]" : "text-white"
-            }`}
+            className={`w-[30%] text-[10px] cursor-pointer ${
+              company
+                ? "text-[dodgerblue] bg-[white]"
+                : "bg-[dodgerblue] text-white"
+            } capitalize rounded-md p-1 flex justify-center items-center h-[50px]`}
           >
             <div
               className="w-full h-full flex justify-center items-center border rounded-md"
@@ -42,7 +44,13 @@ const EditProfile = () => {
               company's credentials
             </div>
           </div>
-          <div className="w-[30%] text-[10px] cursor-pointer rounded-md p-1 flex justify-center items-center text-[dodgerblue] h-[50px] bg-[white]">
+          <div
+            className={`w-[30%] text-[10px] cursor-pointer ${
+              user
+                ? "text-[dodgerblue] bg-[white]"
+                : "bg-[dodgerblue] text-white"
+            } rounded-md p-1 flex justify-center items-center  h-[50px] `}
+          >
             <div
               className="w-full h-full flex justify-center items-center border rounded-md capitalize"
               onClick={onHandleUser}
@@ -50,7 +58,13 @@ const EditProfile = () => {
               naming credentials
             </div>
           </div>
-          <div className="w-[30%] text-[10px] cursor-pointer capitalize rounded-md p-1 flex justify-center items-center text-white h-[50px] bg-[dodgerblue]">
+          <div
+            className={`w-[30%] text-[10px] cursor-pointer capitalize ${
+              render
+                ? "text-[dodgerblue] bg-[white]"
+                : "bg-[dodgerblue] text-white"
+            } rounded-md p-1 flex justify-center items-center h-[50px] `}
+          >
             <div
               className="w-full h-full flex justify-center items-center border rounded-md"
               onClick={onHandleRender}

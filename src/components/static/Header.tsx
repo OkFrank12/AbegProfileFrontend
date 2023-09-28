@@ -1,5 +1,4 @@
 import { useState } from "react";
-import svg from "../../assets/react.svg";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 const Header = () => {
   const [toggle, setToggle] = useState<boolean>(false);
