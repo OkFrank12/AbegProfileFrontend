@@ -1,5 +1,3 @@
-import React from "react";
-
 const ViewProfile = () => {
   return (
     <>
@@ -39,8 +37,13 @@ const ViewProfile = () => {
             blanditiis odio laboriosam quibusdam. Quam aperiam ex ipsum delectus
             nam, quis enim quas, consectetur beatae ea dignissimos? Vitae,
             numquam libero earum pariatur adipisci voluptates, quam odio facilis
-            nihil similique omnis optio, iure quia suscipit?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora labore obcaecati hic atque debitis vel soluta ratione ut, voluptas voluptates nisi consectetur sint itaque quisquam quia dolores rerum amet saepe, temporibus beatae iste? Ex non veniam provident necessitatibus esse, quas omnis soluta. Totam nesciunt itaque numquam fugit earum, id omnis?
+            nihil similique omnis optio, iure quia suscipit? Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Tempora labore obcaecati hic
+            atque debitis vel soluta ratione ut, voluptas voluptates nisi
+            consectetur sint itaque quisquam quia dolores rerum amet saepe,
+            temporibus beatae iste? Ex non veniam provident necessitatibus esse,
+            quas omnis soluta. Totam nesciunt itaque numquam fugit earum, id
+            omnis?
           </span>
         </div>
         <br />
@@ -50,4 +53,3 @@ const ViewProfile = () => {
 };
 
 export default ViewProfile;
-

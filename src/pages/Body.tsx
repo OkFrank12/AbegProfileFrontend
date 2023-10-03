@@ -23,7 +23,7 @@ const Body = () => {
           <div className="mr-2 text-[dodgerblue]">
             <CgProfile />
           </div>
-          {userState ? (
+          {!userState ? (
             <span className="capitalize"> profile</span>
           ) : (
             <span className="capitalize"> Edit Profile</span>
@@ -32,11 +32,11 @@ const Body = () => {
         <div className="w-[80%] p-10 flex justify-between  min-h-[90%] bg-white">
           <Uploader />
 
-          {userState ? (
+          {!userState ? (
             <div className="w-[60%] ">
               <ViewProfile />
               <button
-                className="px-[20px] rounded bg-[dodgerblue] text-white capitalize text-[14px] hover:scale-95 py-2 border-[1px] border-[dodgerblue] flex items-center"
+                className="px-[20px] transition-all duration-300 rounded bg-[dodgerblue] text-white capitalize text-[14px] hover:scale-95 py-2 border-[1px] border-[dodgerblue] flex items-center"
                 onClick={() => {
                   onToggleIt();
                 }}
@@ -50,7 +50,7 @@ const Body = () => {
               <EditProfile />
               <div className="flex">
                 <button
-                  className="px-[20px] rounded bg-[dodgerblue] text-white capitalize text-[14px] hover:scale-95 py-2 border-[1px] border-[dodgerblue] flex items-center mr-2"
+                  className="px-[20px] transition-all duration-300 rounded bg-[dodgerblue] text-white capitalize text-[14px] hover:scale-95 py-2 border-[1px] border-[dodgerblue] flex items-center mr-2"
                   onClick={() => {
                     onToggleIt();
                   }}
@@ -59,7 +59,7 @@ const Body = () => {
                   <span className="ml-2">Save updates</span>
                 </button>
                 <button
-                  className="px-[20px] rounded bg-white text-[dodgerblue] capitalize text-[14px] hover:scale-95 py-2 border-[1px] border-[dodgerblue] flex items-center"
+                  className="px-[20px] rounded transition-all duration-300 bg-white text-[dodgerblue] capitalize text-[14px] hover:scale-95 py-2 border-[1px] border-[dodgerblue] flex items-center"
                   onClick={() => {
                     onToggleIt();
                   }}

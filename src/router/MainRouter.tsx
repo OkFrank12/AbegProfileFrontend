@@ -1,5 +1,4 @@
 import { createBrowserRouter } from "react-router-dom";
-import ViewProfile from "../components/static/ViewProfile";
 import LayOut from "../components/common/LayOut";
 import EditProfile from "../components/static/EditProfile";
 import Body from "../pages/Body";

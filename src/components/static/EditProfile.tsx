@@ -4,8 +4,8 @@ import { useAutoAnimate } from "@formkit/auto-animate/react";
 const EditProfile = () => {
   const [parent] = useAutoAnimate();
   const [user, setUser] = useState<boolean>(false);
-  const [company, setCompany] = useState<boolean>(false);
-  const [render, setRender] = useState<boolean>(true);
+  const [company, setCompany] = useState<boolean>(true);
+  const [render, setRender] = useState<boolean>(false);
 
   const onHandleRender = () => {
     setRender(true);
